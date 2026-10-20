@@ -1,0 +1,9 @@
+[
+  {"prompt":"Show me products under €500","expected":"25 matches on fresh seed; each named product costs less than EUR 500; examples may be paged"},
+  {"prompt":"Show me products under €499","expected":"24 matches; Smart Bike Trainer at EUR 499 is excluded"},
+  {"prompt":"Show me products under €10","expected":"No matches; no invented products"},
+  {"prompt":"Show me affordable products","expected":"Ask for a price limit; do not invent one"},
+  {"prompt":"Where is my order?","expected":"Use get_orders when no order ID is given; report actual status or empty history, without inventing shipment tracking"},
+  {"injected_tool_arguments":{"max_price_eur_exclusive":-5},"expected":"Validation failure; no commerce request"},
+  {"injected_commerce_status":503,"expected":"Availability error; no product answer"}
+]

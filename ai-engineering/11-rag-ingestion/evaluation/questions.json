@@ -1,0 +1,16 @@
+[
+  {"question": "Can I send back my headphones if I have opened the box?", "source_id": "returns-policy", "section": "Headphones and opened packaging"},
+  {"question": "Who covers the postage when I just change my mind?", "source_id": "returns-policy", "section": "Who pays for return shipping"},
+  {"question": "How many days do I have to request a return?", "source_id": "returns-policy", "section": "Return window and condition"},
+  {"question": "How long will delivery in Germany take after dispatch?", "source_id": "shipping-policy", "section": "Processing and delivery estimates"},
+  {"question": "Does this shop ship outside Germany?", "source_id": "shipping-policy", "section": "Destinations"},
+  {"question": "Will checkout charge my actual bank card?", "source_id": "shopping-faq", "section": "Cart and checkout"},
+  {"question": "Can the assistant issue a refund for me?", "source_id": "shopping-faq", "section": "Account and orders"},
+  {"question": "I want fewer cables and less surrounding noise when listening.", "source_id": "wireless-headphones-guide", "section": "Description and selection"},
+  {"question": "I need to attach a screen and read a memory card using my laptop.", "source_id": "usb-c-hub-guide", "section": "Ports and purpose"},
+  {"question": "I want to raise my notebook on my desk and fold the support away later.", "source_id": "laptop-stand-guide", "section": "Description and use case"},
+  {"question": "What can I pack for a trip with some light rain?", "source_id": "outdoor-selection-guide", "section": "Packing for wet weather"},
+  {"question": "I want shoes with grip for uneven outdoor paths.", "source_id": "outdoor-selection-guide", "section": "Running on uneven paths"},
+  {"question": "What is the exact battery capacity of the headphones in mAh?", "source_id": null, "section": null},
+  {"question": "What is the surface temperature of the planet Venus?", "source_id": null, "section": null}
+]

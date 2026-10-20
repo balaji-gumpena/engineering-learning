@@ -1,0 +1,13 @@
+server:
+  address: 127.0.0.1
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:h2:mem:lesson;DB_CLOSE_DELAY=-1
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+security:
+  issuer: ${OIDC_ISSUER_URL:http://localhost:8081/realms/lesson}
+  jwk-set-uri: ${OIDC_JWKS_URL:${security.issuer}/protocol/openid-connect/certs}
+  audience: ${OIDC_AUDIENCE:ai-commerce-api}

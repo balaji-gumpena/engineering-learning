@@ -1,0 +1,25 @@
+{
+  "head": "bdb8c3e061b6288263908477b888c44850a73dbe",
+  "status": " M AGENTS.md\n M docs/learning/README.md\n?? docs/learning/16-learning-module-structure.md\n?? docs/learning/ai-module-extraction-prompt.md\n",
+  "docs": {
+    "AGENTS.md": "9410da8c3496bdc46029d2a50a883826143bca09c62587b85d246d19ac7a889d",
+    "docs/learning/04-authentication-and-authorization.md": "ee2ce4c77797a3d2d87ddb0386687eba5a1e2bf7761fae5cc6444fa105f9c48c",
+    "docs/learning/06-chat-product-comparison.md": "ea53ca877657fb1f294e53db7e379a05346164e057c6513eb7a1165973b1de6f",
+    "docs/learning/03-products-under-500.md": "567b551eb064955ea35a33241dfc715b4bff135e1a3108d6e3eb1c3a74e03964",
+    "docs/learning/15-commerce-rag-learning.md": "6313d4dec5c9f038e67759b650b8d2ddfafa1092b789d86abbfd21544f987f3c",
+    "docs/learning/10-catalog-browsing.md": "eb47a0d68b48c293feae58471b3c001c86856b78ac708257716d948be96a9185",
+    "docs/learning/11-cart-management.md": "2d3b433a2c0ce271f79f55a37e4aa39b29980495bae03b010cd1201c1c528aec",
+    "docs/learning/ai-module-extraction-prompt.md": "7d934151b87575eb190bb3dc96de4bbf4b94387c1f3cd498e16ef851e2a7d506",
+    "docs/learning/05-chat-product-details.md": "3ec419c3440a5f629d55005e0217c999863d0cf504e174d7b9a5573aa1444bd7",
+    "docs/learning/08-chat-order-history.md": "cb0cdce4534e3571981785534e22843b0f734718ea287a9af193b5579d5d0ff9",
+    "docs/learning/README.md": "7e634f5d75acff655c76475294d90d6323eb539063ede3169c553a81499ce823",
+    "docs/learning/02-initial-suggestion-chips.md": "103dd0b68b9d7aa265e806f77bc4d832c0f6059d866453cfd79c22415ef3315c",
+    "docs/learning/09-chat-order-details.md": "044586839ffb6b8b2a41c8f48ac863253480ef617e620eade88f148c71e74b35",
+    "docs/learning/16-learning-module-structure.md": "eca5833fb1a2498328c045b332560189e7b80ec3ce48f42028589c441f9c5ae3",
+    "docs/learning/14-order-details.md": "ba4b23097e9a4cbba775d4c0a2646d46a765b7efd4b697fc7fec9c2216b6d195",
+    "docs/learning/07-chat-cart-lookup.md": "f3277d8eb2a32d2d5041a9975c7e46c22673b5c7278a95298d3da2d73cb3ede4",
+    "docs/learning/01-first-chat-interaction.md": "e1bb67c82340fc71cdcb285a9bcdde0b0ec20e55032596fabad908e503ceef01",
+    "docs/learning/12-checkout.md": "9560c856bb636ab6bb28cfc32c876efcb6a076c5caf05df9fea09cc777674659",
+    "docs/learning/13-admin-products.md": "a7c711856198ec48761ed48cf2636d61663fa81fd4230a55d281d23e5a96869d"
+  }
+}

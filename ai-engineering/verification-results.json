@@ -1,0 +1,230 @@
+{
+  "observed_at": "2026-10-20T11:59:57.912537+00:00",
+  "command": [
+    "./verify.sh"
+  ],
+  "passed": true,
+  "java_tests": 298,
+  "ui_checks": 70,
+  "lifecycle_suites": 10,
+  "fixture_http_checks": 8,
+  "results": [
+    {
+      "module": "01-basic-llm-call",
+      "passed": true,
+      "junit": {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "ui_tests": 6,
+      "lifecycle": "PASS: actual packaged process readiness, idempotent start/stop, fresh restart PID and ownership guard",
+      "make_targets": [
+        "start",
+        "restart",
+        "stop",
+        "status",
+        "build",
+        "test"
+      ]
+    },
+    {
+      "module": "04-conversation-state",
+      "passed": true,
+      "junit": {
+        "tests": 10,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "ui_tests": 6,
+      "lifecycle": "PASS: actual packaged process readiness, idempotent start/stop, fresh restart PID and ownership guard",
+      "make_targets": [
+        "start",
+        "restart",
+        "stop",
+        "status",
+        "build",
+        "test"
+      ]
+    },
+    {
+      "module": "07-first-tool-call",
+      "passed": true,
+      "junit": {
+        "tests": 17,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "ui_tests": 6,
+      "lifecycle": "PASS: actual packaged process readiness, idempotent start/stop, fresh restart PID and ownership guard",
+      "make_targets": [
+        "start",
+        "restart",
+        "stop",
+        "status",
+        "build",
+        "test"
+      ]
+    },
+    {
+      "module": "08-bounded-tool-orchestration",
+      "passed": true,
+      "junit": {
+        "tests": 30,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "ui_tests": 6,
+      "lifecycle": "PASS: actual packaged process readiness, idempotent start/stop, fresh restart PID and ownership guard",
+      "make_targets": [
+        "start",
+        "restart",
+        "stop",
+        "status",
+        "build",
+        "test"
+      ]
+    },
+    {
+      "module": "09-tool-authorization-and-safety",
+      "passed": true,
+      "junit": {
+        "tests": 31,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "ui_tests": 7,
+      "lifecycle": "PASS: actual packaged process readiness, idempotent start/stop, fresh restart PID and ownership guard",
+      "make_targets": [
+        "start",
+        "restart",
+        "stop",
+        "status",
+        "build",
+        "test"
+      ]
+    },
+    {
+      "module": "09-tool-authorization-and-safety/commerce",
+      "passed": true,
+      "junit": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    },
+    {
+      "module": "10-embeddings-and-semantic-retrieval",
+      "passed": true,
+      "junit": {
+        "tests": 15,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "ui_tests": 7,
+      "lifecycle": "PASS: actual packaged process readiness, idempotent start/stop, fresh restart PID and ownership guard",
+      "make_targets": [
+        "start",
+        "restart",
+        "stop",
+        "status",
+        "build",
+        "test"
+      ]
+    },
+    {
+      "module": "11-rag-ingestion",
+      "passed": true,
+      "junit": {
+        "tests": 22,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "ui_tests": 8,
+      "lifecycle": "PASS: actual packaged process readiness, idempotent start/stop, fresh restart PID and ownership guard",
+      "make_targets": [
+        "start",
+        "restart",
+        "stop",
+        "status",
+        "build",
+        "test"
+      ]
+    },
+    {
+      "module": "12-grounded-rag-answers",
+      "passed": true,
+      "junit": {
+        "tests": 76,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "ui_tests": 8,
+      "lifecycle": "PASS: actual packaged process readiness, idempotent start/stop, fresh restart PID and ownership guard",
+      "make_targets": [
+        "start",
+        "restart",
+        "stop",
+        "status",
+        "build",
+        "test"
+      ]
+    },
+    {
+      "module": "13-execution-visibility",
+      "passed": true,
+      "junit": {
+        "tests": 76,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "ui_tests": 9,
+      "lifecycle": "PASS: actual packaged process readiness, idempotent start/stop, fresh restart PID and ownership guard",
+      "make_targets": [
+        "start",
+        "restart",
+        "stop",
+        "status",
+        "build",
+        "test"
+      ]
+    },
+    {
+      "module": "14-provider-comparison",
+      "passed": true,
+      "junit": {
+        "tests": 12,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "ui_tests": 7,
+      "lifecycle": "PASS: actual packaged process readiness, idempotent start/stop, fresh restart PID and ownership guard",
+      "make_targets": [
+        "start",
+        "restart",
+        "stop",
+        "status",
+        "build",
+        "test"
+      ]
+    }
+  ],
+  "optional_checks": {
+    "paid_providers": "not run",
+    "real_local_embeddings": "not run",
+    "postgres": "not run",
+    "identity_journeys": "not run",
+    "manual_visual_browser": "not run"
+  }
+}

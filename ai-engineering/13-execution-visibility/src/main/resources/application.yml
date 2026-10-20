@@ -1,0 +1,62 @@
+spring:
+  application:
+    name: ai-commerce-assistant
+  threads:
+    virtual:
+      enabled: true
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:55439/rag_test
+    username: postgres
+    password: ""
+    hikari:
+      initialization-fail-timeout: -1
+      connection-timeout: 5000
+      connection-init-sql: "SET statement_timeout = '30s'; SET lock_timeout = '5s'"
+server:
+  address: 127.0.0.1
+  port: 8000
+security:
+  issuer: ${OIDC_ISSUER_URL:http://localhost:8081/realms/ai-commerce}
+  jwk-set-uri: ${OIDC_JWKS_URL:${security.issuer}/protocol/openid-connect/certs}
+  audience: ${OIDC_AUDIENCE:ai-commerce-api}
+ai:
+  commerce-url: ${COMMERCE_API_BASE_URL:http://127.0.0.1:8080}
+  allowed-origins: ${AI_ALLOWED_ORIGINS:http://localhost:5173}
+  active-provider: deepseek
+  providers:
+    deepseek:
+      adapter: openai
+      base-url: https://api.deepseek.com/v1
+      model: deepseek-v4-flash
+      api-key-env: DEEPSEEK_API_KEY
+      thinking: disabled
+    openai:
+      adapter: openai
+      base-url: https://api.openai.com/v1
+      model: gpt-5.6-luna
+      api-key-env: OPENAI_API_KEY
+      reasoning-effort: low
+    anthropic:
+      adapter: anthropic
+      base-url: https://api.anthropic.com
+      model: claude-sonnet-5
+      api-key-env: ANTHROPIC_API_KEY
+      effort: high
+  suggestions:
+    - {id: find-a-product, label: Find a product, prompt: 'Show me products under €50'}
+    - {id: product-advice, label: Product advice, prompt: Help me choose a product}
+    - {id: order-help, label: Order help, prompt: I need help with an order}
+    - {id: cart-and-checkout, label: Cart and checkout, prompt: I need help with my cart or checkout}
+  rag:
+    enabled: true
+    bootstrap: false
+    source-directory: ./knowledge
+    model-url: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/onnx/model.onnx
+    tokenizer-url: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer.json
+    cache-directory: ./.cache/models
+    dimensions: 384
+    max-tokens: 240
+    overlap-words: 20
+    top-k: 4
+    min-score: 0.25
+    max-context-characters: 6000

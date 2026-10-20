@@ -1,0 +1,10 @@
+**/.gradle/
+**/build/
+**/.cache/
+**/node_modules/
+**/dist/
+.env
+.env.*
+!.env.example
+.verification/
+**/.runtime/
